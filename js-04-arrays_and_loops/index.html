@@ -35,6 +35,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contáctanos</a>
             </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -44,37 +45,65 @@
     <section class="row align-items-center justify-content-center" id="main-content">
       <!-- logo -->
       <figure class="col-lg-5 col-9">
-        <img id="moodImage" class="img-fluid rounded" src="./public/images/dino.jpg" alt="Dinosaurio rex escribiendo código" />
+        <img class="img-fluid rounded" src="./public/images/dino.jpg" alt="Dinosaurio rex escribiendo código" />
       </figure>
       <!-- principal title -->
       <div class="col-lg-3 col-12 text-warning">
-        <h1 id="title">JS 03</h1>
+        <h1>JS 04</h1>
       </div>
       <!-- sesion description -->
       <div class="col-lg-4 col-12">
-        <p>Flujo de control</p>
+        <p>Arreglos y bucles</p>
         <p class="text-start">
-          El control flow (flujo de control) en JavaScript describe cómo se ejecutan las instrucciones de
-          un programa, desde el inicio hasta el final. Se basa en estructuras como secuencias, condiciones
-          y bucles que determinan qué parte del código se ejecuta y cuándo.
+          Los <span class="text-warning">arrays</span> son un tipo de objeto en JavaScript. Los arrays son 
+          una estructura de datos que contiene una lista de elementos.
         </p>
+        <p class="text-start">
+          Los bucles <span class="text-warning">For</span> se utilizan para iterar a través de una secuencia/array 
+          de tipos de datos u objetos. Su ejecución depende de una condición booleana 
+          (verdadera o falsa) - si la condición es verdadera, entonces el bucle 
+          continúa ejecutándose, pero si la condición es falsa, entonces el bucle se rompe.
+        </p>
+        <p class="text-start">
+          Una sentencia <span class="text-warning">while</span> crea un bucle que ejecuta una instrucción específica 
+          siempre que la condición de prueba se evalúe como verdadera. 
+        </p>
+        <p class="text-start">Objetivos de aprendizaje:</p>
         <ul class="text-start">
-          <li>Describir el control de flujo y por qué es importante para un programador.</li>
-          <li>Usar declaraciones condicionales.</li>
-          <li>Usar la declaración if-else.</li>
-          <li>Usar una declaración switch.</li>
-          <li>Usar expresiones condicionales con los operadores lógicos && y ||</li>
+            <li>Definir y usar arrays.</li>
+            <li>Acceder a un elemento del array en una posición determinada.</li>
+            <li>Agregar un nuevo elemento a un array.</li>
+            <li>Eliminar un elemento de un array.</li>
+            <li>Usar los diferentes bucles de JavaScript: While loop y For loop</li>
+            <li>Explicar la diferencia entre un bucle For y un bucle While.</li>          
         </ul>
       </div>
     </section>
-
-    <section id="excersice" class="row my-3">
-
+    <!-- listado de gelatinas -->
+    <section class="row my-3">
+      <ul class="text-start" id="gelatina-lista">
+      </ul>
+    </section>
+    <!-- listado de cantantes -->
+    <section class="row my-3">
+      <ul class="text-start" id="cantantes-lista">
+      </ul>
+    </section>
+    <!-- Melate Chocolate -->
+    <section class="row my-3 justify-content-center">
+      <!-- button -->
+       <div class="col-md-4">
+        <button class="btn btn-warning" onclick="generarNumerosDeLaSuerte()">Genera tus números</button>
+       </div>
+      <!-- números de la suerte -->
+       <div  class="col-md-4">
+        <p id="melate-chocolate">1-2-3-4-5-6</p> 
+       </div>
     </section>
   </main>
 
-  <footer class="container text-center">
-    <p>&copy; 2025 JavaScript Course</p>
+  <footer class="container text-center">   
+      <p>&copy; 2025 JavaScript Course</p>    
   </footer>
 
   <!-- Bootstrap core JS -->
