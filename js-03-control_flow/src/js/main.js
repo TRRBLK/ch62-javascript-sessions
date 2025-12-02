@@ -267,10 +267,10 @@ condicion ? Expresion1SiCondicionVerdadera : Expresion2SiCondicionFalsa
 
 //PAR O IMPAR USANDO TERNARIO
 
-let parityEvaluation = (number) => {
+let evenOrOdd = (number) => {
 
-    return number%2 === 0 ? "Es par" : "Es impar";
+    return number%2 === 0 ? "even" : "odd";
 }
 
-console.log(parityEvaluation(0));
-console.log(parityEvaluation(1));
+console.log(evenOrOdd(0));
+console.log(evenOrOdd(1));
